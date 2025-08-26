@@ -10,7 +10,7 @@ import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import NotFound from "./pages/NotFound";
-import Analytics from "./pages/Analytics";
+import Analytics from "./Analytics";
 const queryClient = new QueryClient();
 
 const App = () => (
