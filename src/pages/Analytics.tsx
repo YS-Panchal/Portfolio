@@ -1,10 +1,17 @@
-// src/Analytics.jsx
+// src/Analytics.tsx
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 const GA_MEASUREMENT_ID = "G-L38JKMTDMF"; // <-- Replace with your GA4 ID
 
-const Analytics = () => {
+// Define global gtag type
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
+const Analytics: React.FC = () => {
   const location = useLocation();
   const firstLoad = useRef(true);
 
