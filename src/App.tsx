@@ -10,6 +10,7 @@ import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import NotFound from "./pages/NotFound";
+import Analytics from "./pages/Analytics";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Layout>
+          <Analytics />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
