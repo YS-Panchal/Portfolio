@@ -2,23 +2,16 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
-const GA_MEASUREMENT_ID = "G-L38JKMTDMF"; // <-- Replace with your GA4 ID
+const GA_MEASUREMENT_ID = "G-L38JKMTDM"; // <-- Replace with your ID
 
-// Define global gtag type
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void;
-  }
-}
-
-const Analytics: React.FC = () => {
+const Analytics = () => {
   const location = useLocation();
   const firstLoad = useRef(true);
 
   useEffect(() => {
     if (typeof window.gtag === "function") {
+      // On first load, send initial page_view
       if (firstLoad.current) {
-        // On first load, send initial page_view
         window.gtag("config", GA_MEASUREMENT_ID, {
           page_path: location.pathname + location.search,
         });
