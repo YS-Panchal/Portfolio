@@ -21,8 +21,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-heading font-bold text-glow">
-            <img src="public\favicon.ico" alt="" />
+          <Link to="/" className="h-10 w-10 object-contain cursor-pointer">
+            <img src="public\YS_Logo.jpg"/>
           </Link>
 
           {/* Desktop Navigation */}
