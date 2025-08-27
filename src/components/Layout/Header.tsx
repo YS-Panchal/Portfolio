@@ -21,9 +21,14 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="h-10 w-10 object-contain cursor-pointer">
-            <img src="public\YS_Logo.jpg"/>
-          </Link>
+          <Link to="/" className="text-2xl font-heading">
+  <img 
+    src="/YS_Logo.jpg" 
+    alt="Logo" 
+    className="h-10 w-10 object-contain cursor-pointer" 
+  />
+</Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
