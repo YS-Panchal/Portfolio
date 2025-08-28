@@ -19,7 +19,7 @@ const Projects = () => {
       description: 'This React.js-powered portfolio website showcases my projects, skills, and experiences in a modern and interactive way. It acts as a personal brand hub, providing a clean, engaging, and customizable experience for visitors to explore my work and connect with me.',
       image:port,
       technologies: ['ReactJS', 'HTML5', 'Vercel'],
-      demoUrl: 'https://demo.example.com',
+      demoUrl: 'https://yashpanchalportfolio.vercel.app',
       githubUrl: 'https://github.com/example/data-dashboard',
     },
     {
