@@ -1,4 +1,4 @@
-import { Code, Server, Brain, Database } from 'lucide-react';
+import { Code, Server, Brain, Database,Slack} from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -24,6 +24,12 @@ const Skills = () => {
       title: 'Databases & Tools',
       icon: <Database size={24} />,
       skills: ['MySQL', 'Git'],
+      color: 'from-orange-500 to-red-600',
+    },
+    {
+      title: 'Soft Skills',
+      icon: <Slack size={24} />,
+      skills: ['Leadership', 'Strong Communication', 'Teamwork',],
       color: 'from-orange-500 to-red-600',
     },
   ];

@@ -18,17 +18,22 @@ const About = () => {
 
   const certifications = [
     {
-      name: 'IBM Generative AI Internship',
+      name: 'Generative AI Internship',
       organization: 'IBM',
       year: '2025',
     },
     {
+      name: '2 times Smart Indian Hackathon Participant',
+      organization: 'Ministry of Education',
+      year: '2024 & 2025',
+    },
+     {
       name: 'Python-DJango Internship',
       organization: 'CreArt Solutions',
       year: '2025',
     },
     {
-      name: 'Gen AI',
+      name: 'Vertex & Gen AI',
       organization: 'Hack2Skills + Google Cloud',
       year: '2025',
     },
